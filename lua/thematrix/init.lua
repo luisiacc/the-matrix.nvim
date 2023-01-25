@@ -1,5 +1,5 @@
-local util = require("gruvbox-baby.util")
-local theme = require("gruvbox-baby.theme")
+local util = require("thematrix.util")
+local theme = require("thematrix.theme")
 
 local M = {}
 

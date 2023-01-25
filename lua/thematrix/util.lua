@@ -1,5 +1,5 @@
-local hsluv = require("gruvbox-baby.hsluv")
-local theme_util = require("gruvbox-baby.theme")
+local hsluv = require("thematrix.hsluv")
+local theme_util = require("thematrix.theme")
 
 local util = {}
 
@@ -137,7 +137,7 @@ function util.load(theme)
   end
 
   vim.o.termguicolors = true
-  vim.g.colors_name = "gruvbox-baby"
+  vim.g.colors_name = "thematrix"
   -- load base theme
   util.syntax(theme.base)
 

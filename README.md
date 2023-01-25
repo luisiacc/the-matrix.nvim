@@ -18,14 +18,14 @@ _inspired by https://github.com/NvChad/NvChad (You have to enable it via config 
 ## ⚙️ Installation
 
 ```vim
-Plug 'luisiacc/gruvbox-baby', {'branch': 'main'}
+Plug 'luisiacc/thematrix', {'branch': 'main'}
 ...
-colorscheme gruvbox-baby
+colorscheme thematrix
 ```
 
 ## 🪛 Configuration
 
-> ❗️ configuration needs to be set **BEFORE** loading the color scheme with `colorscheme gruvbox-baby`
+> ❗️ configuration needs to be set **BEFORE** loading the color scheme with `colorscheme thematrix`
 
 | Option               | Default     | Available options                                |
 | -------------------- | ----------- | ------------------------------------------------ |
@@ -58,7 +58,7 @@ vim.g.gruvbox_baby_telescope_theme = 1
 vim.g.gruvbox_baby_transparent_mode = 1
 
 -- Load the colorscheme
-vim.cmd[[colorscheme gruvbox-baby]]
+vim.cmd[[colorscheme thematrix]]
 ```
 
 If you enable the telescope theme, I recommend using it with this borderchars config:
@@ -88,13 +88,13 @@ let g:gruvbox_baby_telescope_theme = 1
 let g:gruvbox_baby_transparent_mode = 1
 
 " Load the colorscheme
-colorscheme gruvbox-baby
+colorscheme thematrix
 ```
 
 If you want access to the palette you have to do this:
 
 ```lua
-local colors = require("gruvbox-baby.colors").config()
+local colors = require("thematrix.colors").config()
 vim.g.gruvbox_baby_highlights = {Normal = {fg = colors.orange}}
 ```
 
@@ -111,13 +111,13 @@ vim.g.gruvbox_baby_highlights = {Normal = {fg = colors.orange}}
 
 #### enable Lualine
 
-To enable `gruvbox-baby` theme for `Lualine`, simply specify it in your lualine settings:
+To enable `thematrix` theme for `Lualine`, simply specify it in your lualine settings:
 
 ```
 require('lualine').setup {
     options = {
         -- ... your lualine config,
-        theme = "gruvbox-baby",
+        theme = "thematrix",
         -- ... your lualine config,
     }
 }

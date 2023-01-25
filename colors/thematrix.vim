@@ -1,7 +1,7 @@
-lua package.loaded['gruvbox-baby.colors'] = nil
-lua package.loaded['gruvbox-baby.config'] = nil
-lua package.loaded['gruvbox-baby.theme'] = nil
-lua package.loaded['gruvbox-baby.util'] = nil
-lua package.loaded['gruvbox-baby'] = nil
+lua package.loaded['thematrix.colors'] = nil
+lua package.loaded['thematrix.config'] = nil
+lua package.loaded['thematrix.theme'] = nil
+lua package.loaded['thematrix.util'] = nil
+lua package.loaded['thematrix'] = nil
 
-lua require('gruvbox-baby').colorscheme()
+lua require('thematrix').colorscheme()
