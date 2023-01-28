@@ -1,4 +1,4 @@
-![logo](https://user-images.githubusercontent.com/31720261/156893394-a14a7fee-749c-4d02-8bfd-1a4cb2c479dd.png)
+![banner](images/banner_img.png)
 
 # 🎄 The Matrix Theme
 
@@ -8,17 +8,10 @@ The Matrix Theme with full support for treesitter!
 
 Because it's The Matrix!
 
-## 📸 Pretty pictures
-
-#### 🔍 Telescope
-
-_inspired by https://github.com/NvChad/NvChad (You have to enable it via config variable)_
-![telescope-theme](https://user-images.githubusercontent.com/31720261/151669762-1470aa12-b6ff-47c1-a4e9-ec9b37e0eabe.png)
-
 ## ⚙️ Installation
 
 ```vim
-Plug 'luisiacc/thematrix', {'branch': 'main'}
+Plug 'luisiacc/thematrix'
 ...
 colorscheme thematrix
 ```
@@ -38,24 +31,23 @@ colorscheme thematrix
 | variable_style       | `NONE`      | see `:h attr-list`                               |
 | highlights           | `{}`        | override highlights with your custom highlights  |
 | color_overrides      | `{}`        | override color palette with your custom colors   |
-| use_original_palette | `false`     | use the original gruvbox palette                 |
 
 ```lua
 -- Example config in Lua
-vim.g.gruvbox_baby_function_style = "NONE"
-vim.g.gruvbox_baby_keyword_style = "italic"
+vim.g.thematrix_function_style = "NONE"
+vim.g.thematrix_keyword_style = "italic"
 
 -- Each highlight group must follow the structure:
 -- ColorGroup = {fg = "foreground color", bg = "background_color", style = "some_style(:h attr-list)"}
 -- See also :h highlight-guifg
 -- Example:
-vim.g.gruvbox_baby_highlights = {Normal = {fg = "#123123", bg = "NONE", style="underline"}}
+vim.g.thematrix_highlights = {Normal = {fg = "#123123", bg = "NONE", style="underline"}}
 
 -- Enable telescope theme
-vim.g.gruvbox_baby_telescope_theme = 1
+vim.g.thematrix_telescope_theme = 1
 
 -- Enable transparent mode
-vim.g.gruvbox_baby_transparent_mode = 1
+vim.g.thematrix_transparent_mode = 1
 
 -- Load the colorscheme
 vim.cmd[[colorscheme thematrix]]
@@ -78,14 +70,14 @@ telescope.setup({
 
 ```vim
 " Example config in VimScript
-let g:gruvbox_baby_function_style = "NONE"
-let g:gruvbox_baby_keyword_style = "italic"
+let g:thematrix_function_style = "NONE"
+let g:thematrix_keyword_style = "italic"
 
 " Enable telescope theme
-let g:gruvbox_baby_telescope_theme = 1
+let g:thematrix_telescope_theme = 1
 
 " Enable transparent mode
-let g:gruvbox_baby_transparent_mode = 1
+let g:thematrix_transparent_mode = 1
 
 " Load the colorscheme
 colorscheme thematrix
@@ -95,7 +87,7 @@ If you want access to the palette you have to do this:
 
 ```lua
 local colors = require("thematrix.colors").config()
-vim.g.gruvbox_baby_highlights = {Normal = {fg = colors.orange}}
+vim.g.thematrix_highlights = {Normal = {fg = colors.orange}}
 ```
 
 ## 🔌 Plugin support
